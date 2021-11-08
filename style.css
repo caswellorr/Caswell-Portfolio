@@ -1,7 +1,9 @@
-picture img {
+body {
 
-  /* display: flex; */
-  height: 100%;
-  width: 100%;
+  background-image: url(./assets/IMG_1062.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 
 }
