@@ -46,7 +46,22 @@ header nav ul {
   color: rgba(3, 39, 80, 0.8);
   font-size: xx-large;
   font-weight: bold;
+  text-decoration: none;
+  
 }
+
+header nav a:link {
+  color: rgba(3, 39, 80, 0.8);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+header nav a:visited {
+  color: rgba(3, 39, 80, 0.8);
+  background-color: transparent;
+  text-decoration: none;
+}
+
 /* .navbar li {
   position: relative;
 
@@ -96,13 +111,17 @@ main {
 /*--------------------------------------------------------------
 # About Me Section
 --------------------------------------------------------------*/
+#aboutContainer {
+  display: flex;
 
+}
 
 main section{
 
   margin-bottom: 20px;
   height: 250px;
   display: flex;
+  flex-direction:column;
   justify-content: space-evenly; 
   width: 100%;
 
@@ -111,7 +130,7 @@ main section{
 }
 
 /* Avatar */
-main section img {
+#avatar {
  
   position: relative;
   left: 0;
@@ -139,8 +158,6 @@ main section p {
   font-family: 'Amatic SC', sans-serif;
   padding: 30px;
   
-
-
 
 }
 
