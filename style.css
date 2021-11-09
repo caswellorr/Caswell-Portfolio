@@ -1,7 +1,19 @@
 
 
+
+:root {
+
+  --coolFont: 'Amatic SC', sans-serif;
+}
+
+
 body, html {
   height: 100%;
+}
+
+p {
+
+  font-size: 21px;
 }
 
 /* -----------------------------------------------------
@@ -9,10 +21,9 @@ body, html {
 ------------------------------------------------------------*/
 
 header {
-  /* z-index: 997;
-  transition: all 0.5s; */
+  
   height: 80px;
-  background: rgba(3, 39, 80, 0.8);
+  /* background: rgba(3, 39, 80, 0.8); */
   
 }
 
@@ -22,7 +33,7 @@ header {
 
 header nav {
 
-  font-family: 'Amatic SC', cursive;
+  font-family: var(--coolFont);
 }
 header nav ul {
 
@@ -32,8 +43,9 @@ header nav ul {
   justify-content:space-evenly;
   flex-direction: row;
   list-style: none;
-  color: white;
+  color: rgba(3, 39, 80, 0.8);
   font-size: xx-large;
+  font-weight: bold;
 }
 /* .navbar li {
   position: relative;
@@ -43,9 +55,11 @@ header nav ul {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+
 .hero-image {
 /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/IMG_1062.jpeg);
+  background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/ url(./assets/IMG_1062.jpeg);
 
   height: 75%;
 
@@ -66,7 +80,65 @@ header nav ul {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC', sans-serif;
+
+}
+
+/*--------------------------------------------------------------
+# MAIN
+--------------------------------------------------------------*/
+main {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/*--------------------------------------------------------------
+# About Me Section
+--------------------------------------------------------------*/
+
+
+main section{
+
+  margin-bottom: 20px;
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly; 
+  width: 100%;
+  
+
+}
+
+/* Avatar */
+main section img {
+ 
+  position: relative;
+  left: 0;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+
+}
+
+main section h2 {
+
+  position: relative;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-family: 'Amatic SC', sans-serif;
+
+}
+
+main section p {
+
+  font-family: 'Amatic SC', sans-serif;
+  padding: 30px;
+
+
 
 }
 
@@ -78,15 +150,4 @@ header nav ul {
 
 
 
-/* #face {
- 
-  position:relative;
-  border-style: solid;
-  border-color: black;
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-} */
+
