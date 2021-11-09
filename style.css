@@ -1,3 +1,5 @@
+
+/* Background Image */
 body {
 
   background-image: url(./assets/IMG_1062.jpeg);
@@ -7,3 +9,48 @@ body {
   background-position: center;
 
 }
+
+/* Main Header */
+main section h1 {
+
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 100px;
+  position: relative;
+  top: 50px;
+
+}
+
+/* Centered "logo" */
+#face {
+ 
+  position:relative;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#leftBrain {
+
+  display: inline;
+
+}
+
+#rightBrain {
+
+  display: inline;
+}
+
+
+
+
+
+
+
+
+
