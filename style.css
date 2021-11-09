@@ -105,6 +105,7 @@ main section{
   display: flex;
   justify-content: space-evenly; 
   width: 100%;
+
   
 
 }
@@ -137,6 +138,7 @@ main section p {
 
   font-family: 'Amatic SC', sans-serif;
   padding: 30px;
+  
 
 
 
