@@ -2,15 +2,18 @@
 * {
 
   font-family: 'Amatic SC', sans-serif;
+
 }
 
 body, html {
+
   height: 100%;
 }
 
 p {
 
-  font-size: 21px;
+  font-size: 26px;
+
 }
 
 /* -----------------------------------------------------
@@ -32,29 +35,31 @@ header {
 header nav ul {
 
   margin: 0 auto;
-  padding: 30px;
+  padding: 15px;
   display: flex;
   justify-content:space-evenly;
   flex-direction: row;
   list-style: none;
   color: black;
-  /* color: rgba(3, 39, 80, 0.8); */
+  
+  
+}
+
+header nav ul li {
+
   font-size: xx-large;
   font-weight: bold;
-  
+  text-decoration: underline;
 }
 
 /* Removed the blue and underline for the navbar links */
 header nav a:link {
-  /* color: rgba(3, 39, 80, 0.8); */
-  background-color: transparent;
   text-decoration: none;
   color: black;
 }
 
 header nav a:visited {
-  /* color: rgba(3, 39, 80, 0.8); */
-  background-color: transparent;
+
   text-decoration: none;
   color: black;
 }
@@ -66,9 +71,8 @@ header nav a:visited {
 
 
 .hero-image {
-/* "linear-gradient" darkens background effect to the image. This makes the text easier to read */
-  background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/ url(./assets/IMG_1062.jpeg);
 
+  background-image: url(./assets/IMG_1062.jpeg);
   height: 85%;
 
 /* Position and center the image to scale nicely on all screens */
@@ -207,15 +211,14 @@ input[type=submit]:hover {
 footer {
   width: 100%;
   display: block;
-  height: 450px;
+  height: 300px;
  
   
 }
 
 .footerImage {
-  /* "linear-gradient" darkens background effect to the image. This makes the text easier to read */
-    background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/ url(./assets/IMG_0271.jpeg);
-  
+
+    background-image: url(./assets/IMG_0271.jpeg);
     height: 100%;
   
   /* Position and center the image to scale nicely on all screens */
