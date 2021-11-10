@@ -1,9 +1,12 @@
 
+* {
 
+  font-family: 'Amatic SC', sans-serif;
+}
 
 :root {
 
-  --coolFont: 'Amatic SC', sans-serif;
+  
 }
 
 
@@ -23,18 +26,13 @@ p {
 header {
   
   height: 80px;
-  /* background: rgba(3, 39, 80, 0.8); */
   
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# Navbar
 --------------------------------------------------------------*/
 
-header nav {
-
-  font-family: var(--coolFont);
-}
 header nav ul {
 
   margin: 0 auto;
@@ -46,10 +44,10 @@ header nav ul {
   color: rgba(3, 39, 80, 0.8);
   font-size: xx-large;
   font-weight: bold;
-  text-decoration: none;
   
 }
 
+/* Removed the blue and underline for the navbar links */
 header nav a:link {
   color: rgba(3, 39, 80, 0.8);
   background-color: transparent;
@@ -62,10 +60,6 @@ header nav a:visited {
   text-decoration: none;
 }
 
-/* .navbar li {
-  position: relative;
-
-} */
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -73,8 +67,8 @@ header nav a:visited {
 
 
 .hero-image {
-/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/ url(./assets/IMG_1062.jpeg);
+/* "linear-gradient" darkens background effect to the image. This makes the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/IMG_1062.jpeg);
 
   height: 75%;
 
@@ -95,7 +89,7 @@ header nav a:visited {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: 'Amatic SC', sans-serif;
+ 
 
 }
 
@@ -103,29 +97,19 @@ header nav a:visited {
 # MAIN
 --------------------------------------------------------------*/
 main {
-  width: 75%;
-  display: inline-block;
+  width: 100%;
+  display: block;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 /*--------------------------------------------------------------
 # About Me Section
 --------------------------------------------------------------*/
-#aboutContainer {
+#aboutMe {
   display: flex;
-
-}
-
-main section{
-
-  margin-bottom: 20px;
-  height: 250px;
-  display: flex;
+  position: relative;
   flex-direction:column;
-  justify-content: space-evenly; 
-  width: 100%;
-
-  
 
 }
 
@@ -141,6 +125,21 @@ main section{
   width: 200px;
 
 }
+
+
+
+
+
+/* main section{
+
+  margin-bottom: 20px;
+  height: 250px;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly; 
+
+}
+
 
 main section h2 {
 
@@ -159,8 +158,47 @@ main section p {
   padding: 30px;
   
 
+} */
+
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+
+footer {
+  width: 100%;
+  display: block;
+  height: 450px;
+  
 }
 
+.footerImage {
+  /* "linear-gradient" darkens background effect to the image. This makes the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/IMG_0271.jpeg);
+  
+    height: 75%;
+  
+  /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .footerText {
+ 
+    font-size: 35px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  
+  }
 
 
 
