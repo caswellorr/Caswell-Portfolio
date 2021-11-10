@@ -4,12 +4,6 @@
   font-family: 'Amatic SC', sans-serif;
 }
 
-:root {
-
-  
-}
-
-
 body, html {
   height: 100%;
 }
@@ -27,6 +21,8 @@ header {
   
   height: 80px;
   
+
+  
 }
 
 /*--------------------------------------------------------------
@@ -41,7 +37,8 @@ header nav ul {
   justify-content:space-evenly;
   flex-direction: row;
   list-style: none;
-  color: rgba(3, 39, 80, 0.8);
+  color: black;
+  /* color: rgba(3, 39, 80, 0.8); */
   font-size: xx-large;
   font-weight: bold;
   
@@ -49,15 +46,17 @@ header nav ul {
 
 /* Removed the blue and underline for the navbar links */
 header nav a:link {
-  color: rgba(3, 39, 80, 0.8);
+  /* color: rgba(3, 39, 80, 0.8); */
   background-color: transparent;
   text-decoration: none;
+  color: black;
 }
 
 header nav a:visited {
-  color: rgba(3, 39, 80, 0.8);
+  /* color: rgba(3, 39, 80, 0.8); */
   background-color: transparent;
   text-decoration: none;
+  color: black;
 }
 
 
@@ -68,15 +67,16 @@ header nav a:visited {
 
 .hero-image {
 /* "linear-gradient" darkens background effect to the image. This makes the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/IMG_1062.jpeg);
+  background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/ url(./assets/IMG_1062.jpeg);
 
-  height: 75%;
+  height: 85%;
 
 /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  
 }
 
 /* Place text in the middle of the image */
@@ -103,15 +103,23 @@ main {
   margin-right: 20px;
 }
 
-/*--------------------------------------------------------------
-# About Me Section
---------------------------------------------------------------*/
-#aboutMe {
+.sectionContainers {
   display: flex;
   position: relative;
   flex-direction:column;
+  margin-right: 40px;
+  margin-left: 20px;
 
 }
+
+.sectionContainers h2 {
+
+  font-size:xx-large;
+
+}
+/*--------------------------------------------------------------
+# About Me Section
+--------------------------------------------------------------*/
 
 /* Avatar */
 #avatar {
@@ -123,44 +131,72 @@ main {
   border-radius: 50%;
   height: 200px;
   width: 200px;
+  float: left;
+  margin-right: 30px;
 
 }
 
 
 
+/*--------------------------------------------------------------
+# Projects Section
+--------------------------------------------------------------*/
 
-
-/* main section{
-
-  margin-bottom: 20px;
-  height: 250px;
-  display: flex;
-  flex-direction:column;
-  justify-content: space-evenly; 
-
-}
-
-
-main section h2 {
-
+/* Sailboat */
+#sailboat-doodle {
+ 
   position: relative;
-  text-align: center;
-  padding: 30px;
-  margin-bottom: 20px;
-  font-size: 36px;
-  font-family: 'Amatic SC', sans-serif;
+  left: 0;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  float: right;
+  margin-right: 30px;
 
 }
 
-main section p {
-
-  font-family: 'Amatic SC', sans-serif;
-  padding: 30px;
-  
-
-} */
 
 
+/*--------------------------------------------------------------
+# Contact Me Section
+--------------------------------------------------------------*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact-form-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-size: 20px;
+}
 
 
 /*--------------------------------------------------------------
@@ -172,14 +208,15 @@ footer {
   width: 100%;
   display: block;
   height: 450px;
+ 
   
 }
 
 .footerImage {
   /* "linear-gradient" darkens background effect to the image. This makes the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/IMG_0271.jpeg);
+    background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/ url(./assets/IMG_0271.jpeg);
   
-    height: 75%;
+    height: 100%;
   
   /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -193,18 +230,11 @@ footer {
     font-size: 35px;
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
   
   }
-
-
-
-
-
-
-
 
 
