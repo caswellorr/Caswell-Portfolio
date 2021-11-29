@@ -72,7 +72,7 @@ header nav a:visited {
 
 .hero-image {
 
-  background-image: url(./assets/IMG_1062.jpeg);
+  background-image: url(../images/IMG_1062.jpeg);
   height: 85%;
 
 /* Position and center the image to scale nicely on all screens */
@@ -235,7 +235,7 @@ footer {
 
 .footerImage {
 
-    background-image: url(./assets/IMG_0271.jpeg);
+    background-image: url(../images/IMG_0271.jpeg);
     height: 100%;
   
   /* Position and center the image to scale nicely on all screens */
