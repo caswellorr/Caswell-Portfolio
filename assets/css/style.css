@@ -16,12 +16,6 @@ p {
 
 }
 
-li {
-
-  font-size: 26px;
-
-}
-
 /* -----------------------------------------------------
        # Header
 ------------------------------------------------------------*/
@@ -164,6 +158,20 @@ main {
   width: 200px;
   float: right;
   margin-right: 30px;
+
+}
+
+.projects-images {
+
+  width: 45%;
+  height: 45%;
+
+}
+
+.projects-text {
+
+    font-size: 26px;
+
 
 }
 
